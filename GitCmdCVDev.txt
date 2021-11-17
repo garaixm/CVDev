@@ -21,7 +21,7 @@ $ git remote set-url srvdist "https://garaixm:TOKEN@github.com/reps"
 $ git push srvdist master  –- vers rpsydist
 
          URL  =   "https://github.com/reps" 
-		 URLn =  "https://user.name:TOKEN@github.com/reps"
+	 URLn =  "https://user.name:TOKEN@github.com/reps"
          reps = garaixm/cvdev.git
 	   
 	   --  $ git remote add srvdist URL  sinon  $ git remote set-url srvdist URLn 
