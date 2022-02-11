@@ -14,7 +14,7 @@ $ git remote -v
 $ git config --global user.name "garaixm"
 $ git config --global user.email "goomytue@gmail.com"  
 
-  -- TOKEN =  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
+  -- TOKEN = val  --- Settings\Developper settings\Personal access tokens: generate>  val
 
 $ git remote set-url srvdist "https://garaixm:TOKEN@github.com/reps"
 
@@ -27,5 +27,5 @@ $ git push srvdist master  –- vers rpsydist
 	   --  $ git remote add srvdist URL  sinon  $ git remote set-url srvdist URLn 
         
 URL = https://github.com/garaixm/cvdev.git
-URLn = https://garaixm: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@github.com/garaixm/cvdev.git
+URLn = https://garaixm:val@github.com/garaixm/cvdev.git
  
