@@ -1,31 +1,42 @@
 
 #    cmd git
-
--- publier sur le depot distant de GitHub de cv-dev
--- dépot distant créé sur URL
-
-$ git init   
-$ git add .
-$ git commit -m "création cv-dev CR commentaires"
+   
+// publier repo local  sur le repo distant de GitHub  
+                       à URL = https://github.com/UUU/RDIST
+		               https://github.com/garaixm/CvMichelGaraix ,   RDIST cvdev  UUU garaixm
+$ git init 
+$ git config --global user.name " garaixm "  
+$ git config --global user.email " XXX "  
+$ git add . 
+$ git commit -m "création de CV Michel Garaix commentaires"
+$ git status   
+$ git log --oneline
 $ git branch -M master
-$ git remote add srvdist https://github.com/garaixm/cvdev.git
+$ git remote add repdist "https://github.com/garaixm/cvdev.git"  -- URL.git
 $ git remote -v
-
-$ git config --global user.name "garaixm"
-$ git config --global user.email "goomytue@gmail.com"  
-
-  -- TOKEN = val  --- Settings\Developper settings\Personal access tokens: generate>  val
-
-$ git remote set-url srvdist "https://garaixm:TOKEN@github.com/reps"
-
-$ git push srvdist master  –- vers rpsydist
-
-         URL  =   "https://github.com/reps" 
-	 URLn =  "https://user.name:TOKEN@github.com/reps"
-         reps = garaixm/cvdev.git
-	   
-	   --  $ git remote add srvdist URL  sinon  $ git remote set-url srvdist URLn 
-        
-URL = https://github.com/garaixm/cvdev.git
-URLn = https://garaixm:val@github.com/garaixm/cvdev.git
  
+ --  TOKEN = val --- Settings\Developper settings\Personal access tokens \ generate > val
+
+$ git remote set-url repdist "https://garaixm:TOKEN@repv"
+$ git push repdist master  –- vers repository dist
+
+$ git status
+$ git log
+/////////////////////////////////////////////////////////////////////////////////////////////////
+                 URL=  https://github.com/reps" = "https://github.com/UUU/RDIST
+		 URLn = https://UUU:TOKEN@repv
+                 URLn.git = https://UUU:TOKEN @github.com/UUU/RDIST.git
+ 		 repv = repg/repd                 repv = github.com/garaixm/cvdev
+		 repg =  github.com
+                 repd = UUU/RDIST
+
+          --  $ git remote add srvdist URL.git  sinon  $ git remote set-url srvdist URLn.git 
+        ex
+             URL = https://github.com/garaixm/cvdev
+            URLn = https://garaixm:val@github.com/garaixm/cvdev
+
+                 git remote set-url repdist "URLn.git"  ou   git remote set-url repdist "URL.git" 
+             
+                 git remote set-url repdist "https://garaixm:TOKEN @github.com/garaixm/cvdev.git"
+                 git remote add repdist "URL.git"
+          
